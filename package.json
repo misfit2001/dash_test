@@ -1,0 +1,69 @@
+{
+    "homepage": "http://misfit2001.github.io/dash",
+    "name": "black-dashboard-react",
+    "version": "1.2.2",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.11.1",
+        "@emotion/styled": "^11.11.0",
+        "@fontsource/roboto": "^5.0.3",
+        "@fortawesome/fontawesome-free": "6.4.0",
+        "@mui/icons-material": "^5.11.16",
+        "@mui/material": "^5.13.5",
+        "@mui/styled-engine-sc": "^5.12.0",
+        "axios": "^1.4.0",
+        "bootstrap": "4.6.2",
+        "chart.js": "3.9.1",
+        "classnames": "2.3.2",
+        "cors": "^2.8.5",
+        "google-map-react": "^2.2.1",
+        "google-maps-react": "^2.0.6",
+        "http-proxy-middleware": "^2.0.6",
+        "perfect-scrollbar": "1.5.5",
+        "prop-types": "15.8.1",
+        "react": ">=16.8.0",
+        "react-chartjs-2": "3.3.0",
+        "react-dom": ">=16.8.0",
+        "react-google-maps": "^9.4.5",
+        "react-notification-alert": "0.0.13",
+        "react-router-dom": "6.11.1",
+        "react-scripts": "5.0.1",
+        "sass": "1.62.1",
+        "styled-components": "^6.0.0-rc.3"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build && gulp licenses",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
+        "compile-scss": "sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.css",
+        "minify-scss": "sass src/assets/scss/black-dashboard-react.scss src/assets/css/black-dashboard-react.min.css --style compressed"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0"
+    },
+    "browserslist": [
+        ">0.2%",
+        "not dead",
+        "not ie <= 11",
+        "not op_mini all"
+    ],
+    "optionalDependencies": {
+        "eslint-plugin-flowtype": "8.0.3",
+        "reactstrap": "8.10.1"
+    },
+    "devDependencies": {
+        "gh-pages": "^5.0.0",
+        "typescript": "5.0.4"
+    },
+    "overrides": {
+        "svgo": "3.0.2"
+    }
+}
