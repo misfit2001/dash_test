@@ -1,0 +1,24 @@
+.logocont {
+    position: fixed;
+    top: 9px;
+    left: 20px;
+}
+
+.logocont img {
+    width: 230px;
+    height: 68px;
+    border-radius: 4px;
+}
+@media (max-width: 992px) { 
+    .logocont{
+        position: inherit;
+
+    }   
+
+    .logocont img {
+        width: 152px;
+        height: 50px;
+        border-radius: 4px;
+    }
+}  
+ 
